@@ -1,38 +1,39 @@
-# sv
+# Pokémon Explorer
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This application allows users to view a list of Pokémon available from the PokeAPI (https://pokeapi.co/docs/v2).
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Displays the name, image, and other details of each Pokémon.
+- Filters the Pokémon list by type.
+- Searches the Pokémon list by name.
 
-```sh
-# create a new project in the current directory
-npx sv create
 
-# create a new project in my-app
-npx sv create my-app
+
+## How to use
+
+Run the following commands on Windows PowerShell:
+
+```powershell
+# Clone the repository
+git clone https://github.com/assalah/pokemon-explorer.git
+
+# Navigate into the project folder
+cd pokemon-explorer
+
+
+# Start the development server
+bun dev
 ```
+## project structure
+src/
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+ ├─ lib/
+ 
+ │   ├─ component/   # UI components (Card, styles) 
+ 
+ │   └─ store/       # Search/filter store 
+ 
+ ├─ routes/
+ 
+ │   └─ +page.svelte # Main page
