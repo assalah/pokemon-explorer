@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.svelte-kit",
+    "\\src",
+    "\\src\\lib",
+    "\\src\\lib\\assets",
+    "\\src\\lib\\component",
+    "\\src\\lib\\store",
+    "\\src\\routes",
+    "\\static",
+    "\\static\\images"
+  ],
+  "SelectedNode": "\\src\\routes\\+page.svelte",
+  "PreviewInSolutionExplorer": false
+}
